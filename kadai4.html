@@ -79,6 +79,11 @@
             // 商品表の作成
             for (let i = 0; i < item_list.length; i++) {
                 const row = document.createElement("tr");
+                
+                const nameCell = document.createElement("td");
+                nameCell.textContent = item_list[i].name;
+                row.appendChild(nameCell);
+            }
 
             // クリックイベント時の購入処理の設定
             for (let i=0; i<item_list.length; i++) {
