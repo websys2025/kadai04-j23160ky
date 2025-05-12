@@ -92,6 +92,12 @@
                 stockCell.textContent = item_list[i].stock;
                 row.appendChild(stockCell);
 
+                const buyCell = document.createElement("td");
+                const button = document.createElement("button");
+                button.textContent = "購入";
+                button.id = "button" + item_list[i].id;
+                buyCell.appendChild(button);
+
                 itemArea.appendChild(row);
             }
 
