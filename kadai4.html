@@ -84,6 +84,14 @@
                 nameCell.textContent = item_list[i].name;
                 row.appendChild(nameCell);
 
+                const priceCell = document.createElement("td");
+                priceCell.textContent = item_list[i].price;
+                row.appendChild(priceCell);
+
+                const stockCell = document.createElement("td");
+                stockCell.textContent = item_list[i].stock;
+                row.appendChild(stockCell);
+
                 itemArea.appendChild(row);
             }
 
